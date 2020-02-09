@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:text="Ime:"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/ime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:text="Prezime:"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/prezime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="Datum:"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/datum2"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:id="@+id/calendar2"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calenda_512x512"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:text="Vreme:"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/vreme2"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:id="@+id/clock2"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clock_515x515"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save_512x512"
+            android:layout_weight="1"
+
+            />
+
+        <ImageButton
+            android:id="@+id/delete2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trash_512x512"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/addreport"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/report_512x512"
+        android:onClick="addReport"
+        android:background="@drawable/add_report_button"
+        android:layout_marginBottom="10dp"
+        />
+    <!--android:background="@drawable/ic_launcher_background"-->
+    <!--android:tint="@color/white"-->
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Izveštaji"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+
+
+    <TextView
+        android:id="@+id/poruka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Izabrani klijent nema izveštaja."
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40px"
+        android:background="@color/aqua"/>
+
+
+    <ListView
+        android:id="@+id/listaizvestaja"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+
+       />
+    <!--<Button-->
+        <!--android:id="@+id/buttonok"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:drawableLeft="@drawable/ic_launcher_background"-->
+        <!--android:text="OK"-->
+        <!--/>-->
+
+</LinearLayout>

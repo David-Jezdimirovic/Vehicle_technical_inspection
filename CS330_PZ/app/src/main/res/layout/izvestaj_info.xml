@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Marka: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView android:id="@+id/marka2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="Model: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView android:id="@+id/model2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motor:"/>
+
+    <EditText
+        android:id="@+id/motor2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kočnice:"/>
+
+    <EditText
+        android:id="@+id/kocnice2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Svetla:"/>
+
+    <EditText
+        android:id="@+id/svetla2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datum:"/>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="1"
+        >
+
+        <EditText
+            android:id="@+id/datum3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:layout_column="0"
+           android:layout_columnSpan="2"
+
+            android:focusable="false"
+            android:singleLine="true"
+
+             />
+
+        <ImageButton
+            android:id="@+id/picture"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:src="@drawable/picture_512x512"
+            android:layout_row="0"
+            android:layout_column="2"
+
+            android:layout_columnWeight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:src="@drawable/camera_512x512"
+            android:layout_columnWeight="1"
+            />
+    </GridLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioCheck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/radioProsao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prošao"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/radioNijeProsao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nije prošao"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/save2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save_512x512"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/delete4"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trash_512x512"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

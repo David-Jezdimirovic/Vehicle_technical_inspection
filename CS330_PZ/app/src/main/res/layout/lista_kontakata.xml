@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaKontakata">
+
+    <AutoCompleteTextView android:id="@+id/contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pretražite kontakte"
+
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite broj telefona"
+        />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite email adresu"
+        />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:hint="Ukucajte poruku"
+        />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        >
+
+        <ImageButton
+            android:id="@+id/gmail"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gmail_512x512"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onClickSendEmail"
+            />
+        <!--android:scaleType="fitCenter"-->
+        <ImageButton
+            android:id="@+id/sms"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sms_512x512"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            />
+        <!--</LinearLayout>-->
+        <!--android:layout_marginHorizontal="@android:dimen/app_icon_size"-->
+
+        <Button
+            android:id="@+id/getContacts"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:text="Preuzmi kontakte"
+            android:layout_row="1"
+            android:layout_column="0"
+
+            />
+
+        <ImageButton
+            android:id="@+id/pozovi"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phon_512x512"
+            android:text="Pozovi"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="makeCall"
+            />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </ListView>
+</LinearLayout>

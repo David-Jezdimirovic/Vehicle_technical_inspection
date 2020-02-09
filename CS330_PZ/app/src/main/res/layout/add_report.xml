@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Marka: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView android:id="@+id/marka"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      />
+
+    <TextView
+        android:text="Model: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <AutoCompleteTextView android:id="@+id/model"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Motor:"/>
+
+    <EditText
+        android:id="@+id/motor"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kočnice:"/>
+
+    <EditText
+        android:id="@+id/kocnice"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Svetla:"/>
+
+    <EditText
+        android:id="@+id/svetla"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <RadioGroup
+        android:id="@+id/radioCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/radioProsao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prošao"
+            android:checked="true"
+             />
+
+        <RadioButton
+            android:id="@+id/radioNijeProsao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nije prošao"
+           />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addreport2"
+        android:text="Kreiraj izveštaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

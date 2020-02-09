@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/prikaziSve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prikaži sve klijente"/>
+
+    <TextView
+        android:id="@+id/poruka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Nemate zakazanih klijenata za izabrani datum"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40px"
+        android:background="@color/aqua"/>
+
+    <ListView
+        android:id="@+id/listaklijenata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </ListView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Unesite datum za pretragu"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40px"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/id_datum"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:id="@+id/calendar3"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calenda_512x512"
+
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/id_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_512x512"
+
+
+        />
+
+
+
+
+
+
+</LinearLayout>
